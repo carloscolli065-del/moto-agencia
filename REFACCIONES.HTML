@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Refacciones para Motos</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background-color:lightblue;
+    margin:0;
+}
+
+header{
+    background-color:#333;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+section{
+    padding:20px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+}
+
+th, td{
+    border:1px solid black;
+    padding:10px;
+    text-align:center;
+}
+
+th{
+    background-color:#ff6600;
+    color:white;
+}
+
+footer{
+    background-color:#333;
+    color:white;
+    text-align:center;
+    padding:10px;
+}
+</style>
+</head>
+
+<body>
+<a href="index.html">«««</a>
+
+
+<header>
+<h1>Refacciones para Motos</h1>
+<p>Las mejores refacciones para tu motocicleta</p>
+</header>
+
+<section>
+
+<h2>Lista de Refacciones</h2>
+
+<table>
+<tr>
+<th>Refacción</th>
+<th>Marca</th>
+<th>Compatibilidad</th>
+<th>Precio Aproximado</th>
+</tr>
+
+<tr>
+<td>Frenos de disco</td>
+<td>Brembo</td>
+<td>Motos deportivas</td>
+<td>$2,500 MXN</td>
+</tr>
+
+<tr>
+<td>Cadena reforzada</td>
+<td>DID</td>
+<td>Universal</td>
+<td>$1,200 MXN</td>
+</tr>
+
+<tr>
+<td>Filtro de aire</td>
+<td>K&N</td>
+<td>Yamaha / Kawasaki</td>
+<td>$900 MXN</td>
+</tr>
+
+<tr>
+<td>Bujía</td>
+<td>NGK</td>
+<td>Universal</td>
+<td>$250 MXN</td>
+</tr>
+
+<tr>
+<td>Pastillas de freno</td>
+<td>EBC</td>
+<td>KTM / Suzuki</td>
+<td>$800 MXN</td>
+</tr>
+
+</table>
+
+<h2>Solicitar Refacción</h2>
+
+<label>Nombre:</label><br>
+<input type="text" id="nombre"><br><br>
+
+<label>Refacción que necesita:</label><br>
+<input type="text" id="refaccion"><br><br>
+
+<label>Marca de la moto:</label><br>
+<input type="text" id="marca"><br><br>
+
+<label>Teléfono:</label><br>
+<input type="text" id="telefono"><br><br>
+
+<button onclick="solicitarRefaccion()">Solicitar refacción</button>
+
+<h3>Solicitudes:</h3>
+<div id="lista"></div>
+
+<script>
+function solicitarRefaccion(){
+
+let nombre = document.getElementById("nombre").value;
+let refaccion = document.getElementById("refaccion").value;
+let marca = document.getElementById("marca").value;
+let telefono = document.getElementById("telefono").value;
+
+let solicitud = "<p><b>Nombre:</b> " + nombre +
+"<br><b>Refacción:</b> " + refaccion +
+"<br><b>Marca:</b> " + marca +
+"<br><b>Teléfono:</b> " + telefono + "</p><hr>";
+
+document.getElementById("lista").innerHTML += solicitud;
+
+/* limpiar los campos */
+document.getElementById("nombre").value = "";
+document.getElementById("refaccion").value = "";
+document.getElementById("marca").value = "";
+document.getElementById("telefono").value = "";
+
+}
+</script>
+</section>
+
+<footer>
+<p>Agencia de Motos - Refacciones originales</p>
+</footer>
+
+</body>
+</html>

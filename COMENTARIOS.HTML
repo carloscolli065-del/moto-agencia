@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Comentarios de Clientes</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background-color:lightblue;
+    margin:0;
+}
+
+header{
+    background-color:blue;
+    color:white;
+    text-align:center;
+   
+}
+
+section{
+    padding:20px;
+}
+
+.comentario{
+    background:white;
+    border:1px solid gray;
+    padding:15px;
+    margin-bottom:10px;
+}
+
+form{
+    background:white;
+    padding:20px;
+    border:1px solid gray;
+}
+
+footer{
+    background-color:blue;
+    color:white;
+    text-align:center;
+    padding:10px;
+}
+</style>
+</head>
+
+<body>
+<a href="index.html">«««</a>
+
+<header>
+<h1>Comentarios de Clientes</h1>
+<p>Opiniones sobre nuestras motos y refacciones</p>
+</header>
+
+
+<section>
+
+<h2>Opiniones</h2>
+
+<div class="comentario">
+<strong>Juan Pérez:</strong>
+<p>Excelente servicio y muy buenas motos deportivas.</p>
+</div>
+
+<div class="comentario">
+<strong>María López:</strong>
+<p>Las refacciones son originales y a buen precio.</p>
+</div>
+
+<div class="comentario">
+<strong>Carlos Gómez:</strong>
+<p>Muy buena atención y variedad de marcas como KTM y Suzuki.</p>
+</div>
+
+<h2>Deja tu comentario</h2>
+
+<input type="text" id="nombre" placeholder="Nombre"><br><br>
+
+<textarea id="comentario" placeholder="Comentario"></textarea><br><br>
+
+<button onclick="agregarComentario()">Enviar</button>
+
+<h3>Comentarios:</h3>
+<div id="comentarios"></div>
+
+<script>
+function agregarComentario(){
+
+let nombre = document.getElementById("nombre").value;
+let comentario = document.getElementById("comentario").value;
+
+let nuevo = "<p><b>" + nombre + ":</b> " + comentario + "</p>";
+
+document.getElementById("comentarios").innerHTML += nuevo;
+
+document.getElementById("nombre").value="";
+document.getElementById("comentario").value="";
+
+}
+</script>
+
+</section>
+
+<footer>
+<p>Agencia de Motos - Gracias por tu opinión</p>
+</footer>
+
+</body>
+</html>
