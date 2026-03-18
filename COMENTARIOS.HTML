@@ -2,87 +2,107 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Comentarios de Clientes</title>
 
 <style>
+
 body{
     font-family: Arial, sans-serif;
-    background-color:lightblue;
-    margin:0;
+    background-color: lightblue;
+    margin: 0;
 }
 
 header{
-    background-color:blue;
-    color:white;
-    text-align:center;
-   
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
 
 section{
-    padding:20px;
+    padding: 20px;
 }
 
+/* COMENTARIOS */
 .comentario{
-    background:white;
-    border:1px solid gray;
-    padding:15px;
-    margin-bottom:10px;
+    background: white;
+    border: 1px solid gray;
+    padding: 15px;
+    margin-bottom: 10px;
 }
 
-form{
-    background:white;
-    padding:20px;
-    border:1px solid gray;
+/* FORMULARIO RESPONSIVO */
+input, textarea{
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+textarea{
+    min-height: 100px;
+}
+
+button{
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: orange;
+    color: black;
 }
 
 footer{
-    background-color:blue;
-    color:white;
-    text-align:center;
-    padding:10px;
-}
-/* Contenedor flexible */
-.container {
-  display: flex;
-  flex-wrap: wrap;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
 
-/* Computadora (por defecto) */
-.box {
-  width: 33.33%;
-  box-sizing: border-box;
+/* RESPONSIVE */
+
+/* CELULAR */
+@media (max-width: 600px){
+
+    header{
+        padding: 15px;
+    }
+
+    h1{
+        font-size: 20px;
+    }
 }
 
-/* Tablet */
-@media (max-width: 900px) {
-  .box {
-    width: 50%;
-  }
+/* TABLET */
+@media (min-width: 601px) and (max-width: 1024px){
+
+    section{
+        padding: 15px;
+    }
 }
 
-/* Celular */
-@media (max-width: 600px) {
-  .box {
-    width: 100%;
-  }
+/* IMÁGENES */
+img{
+    max-width: 100%;
+    height: auto;
 }
 
-/* Imágenes adaptables */
-img {
-  max-width: 100%;
-  height: auto;
-}
 </style>
 </head>
 
 <body>
+
 <a href="index.html">«««</a>
 
 <header>
 <h1>Comentarios de Clientes</h1>
 <p>Opiniones sobre nuestras motos y refacciones</p>
 </header>
-
 
 <section>
 
