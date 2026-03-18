@@ -2,61 +2,95 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Motos Suzuki</title>
 
 <style>
+
 body{
     font-family: Arial, sans-serif;
-    margin:0;
-    background-color:#f4f4f4;
+    margin: 0;
+    background-color: #f4f4f4;
 }
 
 header{
-    background-image:url(banner-suzuki.jpeg);
-    background-repreat:no-preat;
+    background-image: url("banner-suzuki.jpeg");
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    color:white;
-    text-align:center;
-    padding:20px;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
 }
 
 section{
-    padding:20px;
+    padding: 20px;
 }
 
 h2{
-    color:#0046ad;
+    color: #0046ad;
 }
 
+/* GALERÍA RESPONSIVA */
 .galeria{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 .galeria img{
-    width:300px;
-    height:200px;
-    border-radius:10px;
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
+/* FOOTER */
 footer{
-    background-color:#0046ad;
-    color:white;
-    text-align:center;
-    padding:10px;
+    background-color: #0046ad;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
+
+/* RESPONSIVE */
+
+/* CELULAR */
+@media (max-width: 600px){
+
+    header{
+        padding: 60px 10px;
+    }
+
+    h2{
+        font-size: 18px;
+    }
+}
+
+/* TABLET */
+@media (min-width: 601px) and (max-width: 1024px){
+
+    header{
+        padding: 80px 20px;
+    }
+}
+
+/* IMÁGENES */
+img{
+    max-width: 100%;
+    height: auto;
+}
+
 </style>
 
 </head>
 
 <body>
+
 <a href="index.html">«««</a>
-<header>
-<br><br><br><br><br><br><br><br><br><br><br><br><br>
-</header>
+
+<header></header>
 
 <section>
 <h2>Historia de Suzuki</h2>
@@ -95,4 +129,5 @@ conocidas por su potencia, velocidad y durabilidad.
 </footer>
 
 </body>
+</html>
 </html>
