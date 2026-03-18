@@ -2,44 +2,78 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Galería de Motos</title>
 
 <style>
+
 body{
     font-family: Arial, sans-serif;
-    background-color:lightblue;
-    color: white;
-    
+    background-color: lightblue;
+    margin: 0;
+    text-align: center;
 }
 
 h1{
-    margin:20px;
+    margin: 20px;
 }
 
+/* GALERÍA RESPONSIVA */
 .galeria{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
 }
 
 .galeria img{
-    width:300px;
-    height:200px;
-    object-fit:cover;
-    border-radius:10px;
-    border:3px solid white;
-    transition:transform 0.01s;
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid white;
+    transition: transform 0.3s;
 }
 
 .galeria img:hover{
-    transform:scale(1.1);
+    transform: scale(1.05);
 }
+
+/* RESPONSIVE */
+
+/* CELULAR */
+@media (max-width: 600px){
+
+    h1{
+        font-size: 20px;
+    }
+
+}
+
+/* TABLET */
+@media (min-width: 601px) and (max-width: 1024px){
+
+    h1{
+        font-size: 24px;
+    }
+
+}
+
+/* IMÁGENES */
+img{
+    max-width: 100%;
+    height: auto;
+}
+
 </style>
 </head>
 
 <body>
+
 <a href="index.html">«««</a>
+
 <h1>Galería de Motos Deportivas</h1>
 
 <div class="galeria">
@@ -54,4 +88,5 @@ h1{
 </div>
 
 </body>
+</html>
 </html>
