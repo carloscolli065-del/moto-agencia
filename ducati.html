@@ -2,62 +2,97 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Motos Ducati</title>
 
 <style>
+
 body{
     font-family: Arial, sans-serif;
-    margin:0;
-    background-color:#f5f5f5;
+    margin: 0;
+    background-color: #f5f5f5;
 }
 
 header{
-    background-image:url(banner-ducati.jpeg);
-    background-repreat:no-preat;
+    background-image: url("banner-ducati.jpeg");
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    color:white;
-    text-align:center;
-    padding:20px;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
 }
 
 section{
-    padding:20px;
+    padding: 20px;
 }
 
 h2{
-    color:#cc0000;
+    color: #cc0000;
 }
 
+/* GALERÍA RESPONSIVA */
 .galeria{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 .galeria img{
-    width:300px;
-    height:200px;
-    border-radius:10px;
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
+/* FOOTER */
 footer{
-    background-color:#cc0000;
-    color:white;
-    text-align:center;
-    padding:10px;
+    background-color: #cc0000;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
+
+/* RESPONSIVE */
+
+/* CELULAR */
+@media (max-width: 600px){
+
+    header{
+        padding: 60px 10px;
+    }
+
+    h2{
+        font-size: 18px;
+    }
+
+}
+
+/* TABLET */
+@media (min-width: 601px) and (max-width: 1024px){
+
+    header{
+        padding: 80px 20px;
+    }
+
+}
+
+/* IMÁGENES */
+img{
+    max-width: 100%;
+    height: auto;
+}
+
 </style>
 
 </head>
 
 <body>
+
 <a href="index.html">«««</a>
 
-<header>
-<BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
-</header>
+<header></header>
 
 <section>
 <h2>Historia de Ducati</h2>
@@ -79,6 +114,290 @@ competencias de motociclismo alrededor del mundo.
 <li>Ducati SuperSport</li>
 </ul>
 </section>
+
+<section>
+<h2>Galería de motos Ducati</h2>
+
+<div class="galeria">
+<img src="https://tse4.mm.bing.net/th/id/OIP.C6a6b8gQWGjbjqDmUBMfZwHaE8?rs=1&pid=ImgDetMain&o=7&rm=3.jpg">
+<img src="https://d1uzk9o9cg136f.cloudfront.net/f/16782548/rc/2024/12/14/f1e58eb2b9708e375ebe3bf008f7b58b92976ff7_xlarge.jpg">
+<img src="https://images5.1000ps.net/biebp-bb_W1000637-bild-638067726258025694.jpg">
+</div>
+
+</section>
+
+<footer>
+<p>Agencia de Motos - El mejor surtido de la región</p>
+</footer>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Motos Ducati</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+header{
+    background-image: url("banner-ducati.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+section{
+    padding: 20px;
+}
+
+h2{
+    color: #cc0000;
+}
+
+/* GALERÍA RESPONSIVA */
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.galeria img{
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* FOOTER */
+footer{
+    background-color: #cc0000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* RESPONSIVE */
+
+/* CELULAR */
+@media (max-width: 600px){
+
+    header{
+        padding: 60px 10px;
+    }
+
+    h2{
+        font-size: 18px;
+    }
+
+}
+
+/* TABLET */
+@media (min-width: 601px) and (max-width: 1024px){
+
+    header{
+        padding: 80px 20px;
+    }
+
+}
+
+/* IMÁGENES */
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<a href="index.html">«««</a>
+
+<header></header>
+
+<section>
+<h2>Historia de Ducati</h2>
+<p>
+Ducati es una empresa italiana fundada en 1926. 
+La marca es famosa por fabricar motocicletas deportivas de alto rendimiento 
+con un diseño elegante y tecnología avanzada. Ducati es muy conocida en 
+competencias de motociclismo alrededor del mundo.
+</p>
+</section>
+
+<section>
+<h2>Modelos populares</h2>
+<ul>
+<li>Ducati Panigale V4</li>
+<li>Ducati Monster</li>
+<li>Ducati Multistrada</li>
+<li>Ducati Streetfighter V4</li>
+<li>Ducati SuperSport</li>
+</ul>
+</section>
+
+<section>
+<h2>Galería de motos Ducati</h2>
+
+<div class="galeria">
+<img src="https://tse4.mm.bing.net/th/id/OIP.C6a6b8gQWGjbjqDmUBMfZwHaE8?rs=1&pid=ImgDetMain&o=7&rm=3.jpg">
+<img src="https://d1uzk9o9cg136f.cloudfront.net/f/16782548/rc/2024/12/14/f1e58eb2b9708e375ebe3bf008f7b58b92976ff7_xlarge.jpg">
+<img src="https://images5.1000ps.net/biebp-bb_W1000637-bild-638067726258025694.jpg">
+</div>
+
+</section>
+
+<footer>
+<p>Agencia de Motos - El mejor surtido de la región</p>
+</footer>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Motos Ducati</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+header{
+    background-image: url("banner-ducati.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+section{
+    padding: 20px;
+}
+
+h2{
+    color: #cc0000;
+}
+
+/* GALERÍA RESPONSIVA */
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.galeria img{
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* FOOTER */
+footer{
+    background-color: #cc0000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* RESPONSIVE */
+
+/* CELULAR */
+@media (max-width: 600px){
+
+    header{
+        padding: 60px 10px;
+    }
+
+    h2{
+        font-size: 18px;
+    }
+
+}
+
+/* TABLET */
+@media (min-width: 601px) and (max-width: 1024px){
+
+    header{
+        padding: 80px 20px;
+    }
+
+}
+
+/* IMÁGENES */
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<a href="index.html">«««</a>
+
+<header></header>
+
+<section>
+<h2>Historia de Ducati</h2>
+<p>
+Ducati es una empresa italiana fundada en 1926. 
+La marca es famosa por fabricar motocicletas deportivas de alto rendimiento 
+con un diseño elegante y tecnología avanzada. Ducati es muy conocida en 
+competencias de motociclismo alrededor del mundo.
+</p>
+</section>
+
+<section>
+<h2>Modelos populares</h2>
+<ul>
+<li>Ducati Panigale V4</li>
+<li>Ducati Monster</li>
+<li>Ducati Multistrada</li>
+<li>Ducati Streetfighter V4</li>
+<li>Ducati SuperSport</li>
+</ul>
+</section>
+
+<section>
+<h2>Galería de motos Ducati</h2>
+
+<div class="galeria">
+<img src="https://tse4.mm.bing.net/th/id/OIP.C6a6b8gQWGjbjqDmUBMfZwHaE8?rs=1&pid=ImgDetMain&o=7&rm=3.jpg">
+<img src="https://d1uzk9o9cg136f.cloudfront.net/f/16782548/rc/2024/12/14/f1e58eb2b9708e375ebe3bf008f7b58b92976ff7_xlarge.jpg">
+<img src="https://images5.1000ps.net/biebp-bb_W1000637-bild-638067726258025694.jpg">
+</div>
+
+</section>
+
+<footer>
+<p>Agencia de Motos - El mejor surtido de la región</p>
+</footer>
+
+</body>
+</html>
 
 <section>
 <h2>Galería de motos Ducati</h2>
