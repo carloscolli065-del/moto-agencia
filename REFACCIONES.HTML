@@ -2,13 +2,15 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Refacciones para Motos</title>
 
 <style>
+
 body{
     font-family: Arial, sans-serif;
-    background-color:lightblue;
-    margin:0;
+    background-color: lightblue;
+    margin: 0;
 }
 
 header{
@@ -22,10 +24,16 @@ section{
     padding:20px;
 }
 
+/* TABLA RESPONSIVA */
+.table-container{
+    overflow-x:auto; /* 🔥 scroll en celular */
+}
+
 table{
     width:100%;
     border-collapse:collapse;
     background:white;
+    min-width:600px; /* evita que se rompa */
 }
 
 th, td{
@@ -39,49 +47,72 @@ th{
     color:white;
 }
 
+/* FORMULARIO RESPONSIVO */
+input{
+    width:100%;
+    max-width:400px;
+    padding:10px;
+    margin-bottom:10px;
+    box-sizing:border-box;
+}
+
+button{
+    padding:10px 20px;
+    background-color:black;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+button:hover{
+    background-color:orange;
+    color:black;
+}
+
+/* CONTENEDOR FLEXIBLE */
+.container{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+/* FOOTER */
 footer{
     background-color:#333;
     color:white;
     text-align:center;
     padding:10px;
 }
-/* Contenedor flexible */
-.container {
-  display: flex;
-  flex-wrap: wrap;
+
+/* RESPONSIVE */
+
+/* CELULAR */
+@media (max-width:600px){
+
+    header{
+        padding:15px;
+    }
+
+    h1{
+        font-size:20px;
+    }
+
 }
 
-/* Computadora (por defecto) */
-.box {
-  width: 33.33%;
-  box-sizing: border-box;
+/* TABLET */
+@media (min-width:601px) and (max-width:1024px){
+
+    section{
+        padding:15px;
+    }
+
 }
 
-/* Tablet */
-@media (max-width: 900px) {
-  .box {
-    width: 50%;
-  }
-}
-
-/* Celular */
-@media (max-width: 600px) {
-  .box {
-    width: 100%;
-  }
-}
-
-/* Imágenes adaptables */
-img {
-  max-width: 100%;
-  height: auto;
-}
 </style>
 </head>
 
 <body>
-<a href="index.html">«««</a>
 
+<a href="index.html">«««</a>
 
 <header>
 <h1>Refacciones para Motos</h1>
@@ -92,6 +123,7 @@ img {
 
 <h2>Lista de Refacciones</h2>
 
+<div class="table-container">
 <table>
 <tr>
 <th>Refacción</th>
@@ -136,20 +168,21 @@ img {
 </tr>
 
 </table>
+</div>
 
 <h2>Solicitar Refacción</h2>
 
 <label>Nombre:</label><br>
-<input type="text" id="nombre"><br><br>
+<input type="text" id="nombre"><br>
 
 <label>Refacción que necesita:</label><br>
-<input type="text" id="refaccion"><br><br>
+<input type="text" id="refaccion"><br>
 
 <label>Marca de la moto:</label><br>
-<input type="text" id="marca"><br><br>
+<input type="text" id="marca"><br>
 
 <label>Teléfono:</label><br>
-<input type="text" id="telefono"><br><br>
+<input type="text" id="telefono"><br>
 
 <button onclick="solicitarRefaccion()">Solicitar refacción</button>
 
@@ -171,7 +204,6 @@ let solicitud = "<p><b>Nombre:</b> " + nombre +
 
 document.getElementById("lista").innerHTML += solicitud;
 
-/* limpiar los campos */
 document.getElementById("nombre").value = "";
 document.getElementById("refaccion").value = "";
 document.getElementById("marca").value = "";
@@ -179,6 +211,7 @@ document.getElementById("telefono").value = "";
 
 }
 </script>
+
 </section>
 
 <footer>
