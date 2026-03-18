@@ -1,192 +1,186 @@
-<!DOCTYPE html> <!-- Indica que estamos usando HTML5 -->
-<html lang="es"> <!-- Inicio del documento HTML y especifica que está en español -->
+<!DOCTYPE html>
+<html lang="es">
 
-<head> <!-- Inicio de la parte de configuración -->
-<meta charset="UTF-8"> <!-- Permite usar acentos y caracteres especiales -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que funcione bien en celular -->
-<title>AGENCIA </title> <!-- Título que aparece en la pestaña del navegador -->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AGENCIA</title>
 
-<style> /* Inicio de estilos CSS */
+<style>
 
-/* ===== ESTILO GENERAL ===== */
-body{ /* Aplica estilo a todo el cuerpo de la página */
-    font-family: Arial, sans-serif; /* Cambia el tipo de letra */
-    margin: 0; /* Quita el margen que agrega el navegador por defecto */
-    background-color: lightblue; /* Color del Fondo de Todo el cuerpo */
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: lightblue;
 }
 
-/* ===== ENCABEZADO ===== */
-header{ /* Estilo del encabezado */
-    background-image: url("banner.jpeg"); /* Imagen de fondo */
-    background-size:cover; /* Ajusta la imagen al tamaño del encabezado */
-    background-position: center; /* Centra la imagen */
-    color:blue; /* Color del texto */
-    text-align:center; /* Centra el texto */
-    padding: 60px 60px; /* Espacio interno arriba/abajo y lados */
+header{
+    background-image: url("banner.jpeg");
+    background-size: cover;
+    background-position: center;
+    color: blue;
+    text-align: center;
+    padding: 100px 20px;
 }
 
-/* ===== MENÚ ===== */
-nav{ /* Barra de navegación */
-    background-color: black; /* Fondo negro */
-    text-align: left; /* coloca a  la Izquierda los enlaces */
+nav{
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-nav a{ /* Estilo de los enlaces del menú */
-    color: red; /* Color del texto */
-    text-decoration: none; /* Quita el subrayado */
-    padding: 15px; /* Espacio interno */
-    display: inline-block; /* Permite aplicar padding correctamente */
+nav a{
+    color: red;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
 }
 
-nav a:hover{ /* Cuando pasamos el mouse */
-    background-color: orange; /* Cambia fondo */
-    color: black; /* Cambia color del texto */
+nav a:hover{
+    background-color: orange;
+    color: black;
 }
 
-/* ===== SUBMENÚ ===== */
-.dropdown{ /* Contenedor del menú desplegable */
-    display: inline-block; /* Permite que esté en línea */
-    position: relative; /* Necesario para posicionar el submenú */
+.dropdown{
+    position: relative;
 }
 
-.dropdown-content{ /* Submenú oculto */
-    display: none; /* Oculto por defecto */
-    position: absolute; /* Se posiciona debajo */
-    background-color: gray; /* Fondo gris */
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: gray;
+    min-width: 150px;
 }
 
-.dropdown-content a{ /* Enlaces del submenú */
-    display: block; /* Uno debajo del otro */
+.dropdown-content a{
+    display: block;
 }
 
-.dropdown:hover .dropdown-content{ /* Cuando pasamos el mouse */
-    display: block; /* Se muestra el submenú */
+.dropdown:hover .dropdown-content{
+    display: block;
 }
 
-/* ===== CONTENIDO PRINCIPAL ===== */
-.contenedor{ /* Contenedor general */
-    display: flex; /* Coloca elementos uno al lado del otro */
-    padding: 20px; /* Espacio interno */
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
 }
 
-main{ /* Parte principal */
-    width: 70%; /* Ocupa 70% del espacio */
+main{
+    flex: 1;
+    min-width: 300px;
 }
 
 .audio{
-text-align:center;
-padding:20px;
-
+    text-align: center;
+    padding: 20px;
 }
 
-
-/* ===== PIE DE PÁGINA ===== */
-footer{ /* Estilo del pie de página */
-    background-color: black; /* Fondo negro */
-    color: white; /* Texto blanco */
-    text-align: center; /* Centra texto */
-    padding: 15px; /* Espacio interno */
-}
- /* Contenedor flexible */
-.container {
-  display: flex;
-  flex-wrap: wrap;
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
 }
 
-/* Computadora (por defecto) */
-.box {
-  width: 33.33%;
-  box-sizing: border-box;
+/* RESPONSIVE */
+
+/* CELULAR */
+@media (max-width: 600px){
+
+    header{
+        padding: 60px 10px;
+    }
+
+    nav{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dropdown-content{
+        position: static;
+    }
 }
 
-/* Tablet */
-@media (max-width: 900px) {
-  .box {
-    width: 50%;
-  }
+/* TABLET */
+@media (min-width: 601px) and (max-width: 1024px){
+
+    nav{
+        justify-content: space-around;
+    }
+
+    header{
+        padding: 80px 20px;
+    }
 }
 
-/* Celular */
-@media (max-width: 600px) {
-  .box {
-    width: 100%;
-  }
-}
+</style>
+</head>
 
-/* Imágenes adaptables */
-img {
-  max-width: 100%;
-  height: auto;
-}
-</style> <!-- Fin de estilos -->
-</head> <!-- Fin de la parte de configuración -->
+<body>
 
-<body> <!-- Inicio del contenido visible -->
+<header>
+    <h1>AGENCIA DE MOTOS</h1>
+</header>
 
-<header> <!-- Encabezado -->
-        <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
-   </header>
+<nav>
+    <a href="REFACCIONES.HTML">REFACCIONES</a>
+    <a href="COTIZACION.HTML">COTIZACION</a>
 
-<nav> <!-- Menú de navegación -->
-    <a href="REFACCIONES.HTML">REFACIONES</a> <!-- Opción del menú -->
-    <a href="COTIZACION.HTML">COTIZACION</a> <!-- Opción del menú -->
-
-    <div class="dropdown"> <!-- Menú desplegable -->
-        <a href="#">MARCAS</a> <!-- Opción principal -->
-        <div class="dropdown-content"> <!-- Submenú -->
-            <a href="yamaha.html">Yamaha</a> <!-- Subopción -->
-            <a href="kawasaki.html">Kawasaki</a> <!-- Subopción -->
-            <a href="honda.html">Honda</a> <!-- Subopción -->
-            <a href="ducati.html">Ducati</a> <!-- Subopción -->
-            <a href="susuki.html">Susuki</a> <!-- Subopción -->
-            <a href="bmw.html">BMW</a> <!-- Subopción -->
-            
+    <div class="dropdown">
+        <a href="#">MARCAS</a>
+        <div class="dropdown-content">
+            <a href="yamaha.html">Yamaha</a>
+            <a href="kawasaki.html">Kawasaki</a>
+            <a href="honda.html">Honda</a>
+            <a href="ducati.html">Ducati</a>
+            <a href="susuki.html">Suzuki</a>
+            <a href="bmw.html">BMW</a>
         </div>
     </div>
 
-    <a href="COMENTARIOS.HTML">COMENTARIOS</a> <!-- Opción del menú -->
-    <a href="galeria.html">GALERIA</a> <!-- Opción del menú -->
-    	
+    <a href="COMENTARIOS.HTML">COMENTARIOS</a>
+    <a href="galeria.html">GALERIA</a>
 </nav>
 
-<div class="contenedor"> <!-- Contenedor principal -->
+<div class="contenedor">
 
-    <main> <!-- Sección principal -->
-        <h2>Bienvenidos</h2> <!-- Título -->
-        <p>Somos una agencia especializada en las mejores motos que puedaser de su agrado, de igual forma contamos con motos de baj, media y alta cilindrada.</p>
-        <p>Contamos con piezas para Yamaha, kawasaki, susuki, honada,entre otas marcas.</p>
-        <br><br><hr>                  <!--Agregamos espacios y la barra horizontal-->
-        <p> Contamos con Garantía y Personal calificado para el cuidado de sus vehiculos</p>
-        <p>Visitenos y no se arrepentirá.....</p>
+    <main>
+        <h2>Bienvenidos</h2>
+        <p>Somos una agencia especializada en las mejores motos que pueden ser de su agrado. Contamos con motos de baja, media y alta cilindrada.</p>
+        <p>Tenemos piezas para Yamaha, Kawasaki, Suzuki, Honda, entre otras marcas.</p>
 
- text-decoration: none;
- <a href="C:\Users\uluac\Desktop\proyecto\motos-viedo.mp4">VIDEO</a><BR>
- <a href="https://www.facebook.com/share/19NEjwL2S3/">FACEBOOK</a><br>
- <a href="https://www.instagram.com/carlos_14.06?igsh=MXhxMWMyaDkwMmE3eg==">TIK TOK
- <p>Contacto:</p>
-<a href="https://mail.google.com/mail/?view=cm&to=carloscolli065@gmail.com">
-📧 Enviar correo a la agencia
-</a>
+        <br><hr>
 
+        <p>Contamos con garantía y personal calificado para el cuidado de sus vehículos.</p>
+        <p>Visítenos y no se arrepentirá.</p>
+
+        <a href="video.mp4">VIDEO</a><br>
+        <a href="https://www.facebook.com/">FACEBOOK</a><br>
+        <a href="https://www.instagram.com/">INSTAGRAM</a>
+
+        <p>Contacto:</p>
+        <a href="mailto:carloscolli065@gmail.com">
+        📧 Enviar correo a la agencia
+        </a>
 
     </main>
 
-    
 </div>
+
 <section class="audio">
-<h2>Escucha este audio</h2>
-<audio controls>
-<source src="C:\Users\uluac\Desktop\proyecto\AUDIO.MP3.mpeg">
-Tu navegador no soporta audio.
-</audio>
+    <h2>Escucha este audio</h2>
+    <audio controls>
+        <source src="audio.mp3">
+        Tu navegador no soporta audio.
+    </audio>
 </section>
 
-<footer> <!-- Pie de página -->
+<footer>
     <p>Gracias por su preferencia, seguimos avanzando...</p>
     <p>Calle 20 x 25 Tixméhuac, Yucatán</p>
-
-    
 </footer>
 
-</body> <!-- Fin del contenido visible -->
-</html> <!-- Fin del documento -->
+</body>
+</html>
