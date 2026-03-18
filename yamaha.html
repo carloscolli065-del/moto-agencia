@@ -2,71 +2,101 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Motos Yamaha</title>
 
 <style>
+
 body{
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
-    margin:0;
+    margin: 0;
 }
 
-
 header{
-
-    
-    background-image:url(naber-yamaha.jpeg);
-    background-repreat:no-preat;
+    background-image: url("banner-yamaha.jpeg");
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    color:white;
-    text-align:center;
-    padding:20px;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
 }
 
 section{
-    padding:40px;
+    padding: 20px;
 }
 
 h2{
-    color:#0033a0;
+    color: #0033a0;
 }
 
+/* GALERÍA RESPONSIVA */
 .galeria{
-    display:flex;
-    flex-wrap:wrap;
-    gap:20px;
-    justify-content:center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
 .galeria img{
-    width:300px;
-    height:200px;
-    border-radius:10px;
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
+/* AUDIO */
 .audio{
-text-align:center;
-padding:20px;
-
+    text-align: center;
+    padding: 20px;
 }
 
+/* FOOTER */
 footer{
-    background-color:#0033a0;
-    color:white;
-    text-align:center;
-    padding:10px;
+    background-color: #0033a0;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
+
+/* RESPONSIVE */
+
+/* CELULAR */
+@media (max-width: 600px){
+
+    header{
+        padding: 60px 10px;
+    }
+
+    h2{
+        font-size: 18px;
+    }
+}
+
+/* TABLET */
+@media (min-width: 601px) and (max-width: 1024px){
+
+    header{
+        padding: 80px 20px;
+    }
+}
+
+/* IMÁGENES */
+img{
+    max-width: 100%;
+    height: auto;
+}
+
 </style>
 
 </head>
 
 <body>
-<a href="index.html">«««</a>
-<header>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-</header>
+<a href="index.html">«««</a>
+
+<header></header>
 
 <section>
 <h2>Historia de Yamaha</h2>
@@ -102,7 +132,7 @@ Las motos Yamaha son populares por su potencia, diseño y tecnología.
 <section class="audio">
 <h2>Escucha este audio</h2>
 <audio controls>
-<source src="C:\Users\uluac\Desktop\proyecto\mt-09alcorte.mp3.mpeg">
+<source src="mt-09.mp3">
 Tu navegador no soporta audio.
 </audio>
 </section>
