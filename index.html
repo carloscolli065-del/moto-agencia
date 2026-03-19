@@ -18,10 +18,13 @@ header{
     background-image: url("banner.jpeg");
     background-size: cover;
     background-position: center;
-    color: blue;
-    text-align: center;
-    padding: 50px 10px;
+    background-repeat: no-repeat;
+    height: 300px; /* altura base */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 
 nav{
     background-color: black;
@@ -86,11 +89,11 @@ footer{
 
 /* RESPONSIVA */
 
-/* CELULAR */
 @media (max-width: 800px){
 
     header{
-        padding: 60px 10px;
+        height: 180px; /* más pequeño para celular */
+        background-position: center;
     }
 
     nav{
@@ -101,6 +104,7 @@ footer{
     .dropdown-content{
         position: static;
     }
+
 }
 
 /* TABLET */
